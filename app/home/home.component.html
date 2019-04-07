@@ -1,6 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <StackLayout class="p-20">
   <Label text="Tap the button" class="h1 text-center"></Label>
-  <Button text="TAP" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
+
+  <Button [text]="'hello' | translate" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
   <Label [text]="getMessage()" class="h2 text-center" textWrap="true"></Label>
+  <button text="set english" (tap)="setEnglish()" class="btn btn-primary btn-active"></button>
+  <button text="set spanish" (tap)="setSpanish()" class="btn btn-primary btn-active"></button>
 </StackLayout>
